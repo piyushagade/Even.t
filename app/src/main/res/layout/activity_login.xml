@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFFFFFFF"
+    android:id="@+id/rl_login">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/login_background"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#cceeeeee">
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="80sp"
+        android:layout_margin="30sp"
+        android:src="@drawable/logo_textified"
+        android:id="@+id/iv_logo"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/iv_logo"
+        android:padding="20sp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20sp"
+            android:id="@+id/fragment_desc_sv"
+            android:padding="10sp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="6sp">
+
+
+
+                <!--Login Section-->
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/rl_login_section"
+                    android:visibility="visible">
+
+
+                    <TextView
+                        android:text="Email address:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/email_title"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="12sp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="40sp"
+                        android:layout_centerHorizontal="true"
+                        android:height="40sp"
+                        android:padding="5sp"
+                        android:gravity="center"
+                        android:id="@+id/login_email"
+                        android:textSize="14sp"
+                        android:text=""
+                        android:layout_below="@id/email_title"/>
+
+
+                    <TextView
+                        android:text="Password:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/password_title"
+                        android:layout_marginTop="30sp"
+                        android:textColor="@color/colorAccent"
+                        android:layout_below="@id/login_email"
+                        android:textSize="12sp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="40sp"
+                        android:layout_centerHorizontal="true"
+                        android:height="40sp"
+                        android:padding="5sp"
+                        android:gravity="center"
+                        android:id="@+id/login_password"
+                        android:inputType="textPassword"
+                        android:layout_below="@id/password_title"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="6sp"
+                        android:layout_below="@id/login_password"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20sp"
+                        android:background="@color/colorAccent"
+                        android:text="Login"
+                        android:textColor="#AAFFFFFF"
+                        android:id="@+id/b_login" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/b_login"
+                        android:layout_marginTop="20sp"
+                        android:text="-or-"/>
+
+
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="16sp"
+                        android:layout_below="@id/b_login"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="55sp"
+                        android:background="@color/colorAccent"
+                        android:text="Create an account"
+                        android:textColor="#AAFFFFFF"
+                        android:id="@+id/b_register_page" />
+
+
+                </RelativeLayout>
+
+
+
+
+
+                <!--Register section-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    android:id="@+id/rl_register_section">
+
+
+                    <TextView
+                        android:text="Email address:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/register_email_title"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="12sp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="40sp"
+                        android:layout_centerHorizontal="true"
+                        android:height="40sp"
+                        android:padding="5sp"
+                        android:gravity="center"
+                        android:id="@+id/register_email"
+                        android:hint="doe.john@domain.com"
+                        android:textColorHint="#AAAAAA"
+                        android:textSize="14sp"
+                        android:text=""
+                        android:layout_below="@id/register_email_title"/>
+
+
+                    <TextView
+                        android:text="Password:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/register_password_title"
+                        android:layout_marginTop="30sp"
+                        android:textColor="@color/colorAccent"
+                        android:layout_below="@id/register_email"
+                        android:textSize="12sp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="40sp"
+                        android:layout_centerHorizontal="true"
+                        android:height="40sp"
+                        android:textSize="14sp"
+                        android:padding="5sp"
+                        android:gravity="center"
+                        android:id="@+id/register_password"
+                        android:hint="********"
+                        android:textColorHint="#AAAAAA"
+                        android:inputType="textPassword"
+                        android:layout_below="@id/register_password_title"/>
+
+
+                    <TextView
+                        android:text="Full name:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/register_name_title"
+                        android:layout_marginTop="30sp"
+                        android:textColor="@color/colorAccent"
+                        android:layout_below="@id/register_password"
+                        android:textSize="12sp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="40sp"
+                        android:layout_centerHorizontal="true"
+                        android:height="40sp"
+                        android:padding="5sp"
+                        android:textSize="14sp"
+                        android:gravity="center"
+                        android:id="@+id/register_name"
+                        android:hint="John Doe"
+                        android:textColorHint="#AAAAAA"
+                        android:layout_below="@id/register_name_title"/>
+
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="16sp"
+                        android:layout_below="@id/register_name"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="24sp"
+                        android:background="@color/colorAccent"
+                        android:text="Create an account"
+                        android:textColor="#AAFFFFFF"
+                        android:id="@+id/b_register" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20sp"
+                        android:text="I have an account."
+                        android:id="@+id/b_login_page"
+                        android:textColor="@color/colorAccent"
+                        android:layout_below="@id/b_register"/>
+
+
+                </RelativeLayout>
+
+
+
+
+
+                <!--Register section-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    android:id="@+id/rl_login_wait">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="Please wait..."/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="Logging you in."
+                        android:textSize="24sp"
+                        android:layout_marginTop="20sp"
+                        android:textColor="@color/colorAccent"/>
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+
+</RelativeLayout>

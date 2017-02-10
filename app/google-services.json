@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "375634929051",
+    "firebase_url": "https://even-t.firebaseio.com",
+    "project_id": "even-t",
+    "storage_bucket": "even-t.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:375634929051:android:dfd70171b17010d8",
+        "android_client_info": {
+          "package_name": "com.piyushagade.event"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "375634929051-t3k0ipjj2mcf2205i0a29j2aql0vve0s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAydwE-FvE8C_foKcOrw-L4WtD0SDOgLc4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "375634929051-t3k0ipjj2mcf2205i0a29j2aql0vve0s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

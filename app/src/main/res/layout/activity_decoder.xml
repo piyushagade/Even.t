@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QRActivity"
+    android:id="@+id/rl_decoder">
+
+    <com.dlazaro66.qrcodereaderview.QRCodeReaderView
+    android:id="@+id/qrdecoderview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/crosshairs"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:padding="10sp">
+
+        <Button
+            android:layout_width="180sp"
+            android:layout_height="40sp"
+            android:layout_marginBottom="10sp"
+            android:layout_marginLeft="6sp"
+            android:id="@+id/b_qr_help"
+            android:textColor="#CCFFFFFF"
+            android:alpha=".64"
+            android:visibility="gone"
+            android:text="Help"
+            android:layout_marginRight="10sp"
+            android:background="@color/colorAccent"/>
+
+
+        <Button
+            android:layout_width="180sp"
+            android:layout_height="40sp"
+            android:layout_marginBottom="10sp"
+            android:layout_marginLeft="6sp"
+            android:id="@+id/b_qr_back"
+            android:textColor="#CCFFFFFF"
+            android:layout_toRightOf="@id/b_qr_help"
+            android:alpha=".64"
+            android:text="Back"
+            android:background="@color/colorAccent"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
